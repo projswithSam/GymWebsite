@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samyak's Fitness</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,400&family=Montserrat:wght@100&family=Noto+Sans+JP:wght@600&family=Poppins:ital,wght@1,100&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CSS RESET  */
+    body{
+        font-family: 'Lato', sans-serif;
+        margin: 0px;
+        color: blue;
+        padding: 0px;
+        background: url(img/dumbbells-2465478_1280.jpg);
+        height: 800px;
+        
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid rgb(198, 14, 14); */
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+    .body img{
+        filter: invert(100%);
+    }
+    .mid{
+        display: block;
+        width: 48%;
+        margin: 20px auto; 
+        /* border: 2px solid green; */
+
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid blue; */
+
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        color: white;
+        display: inline-block;
+        font-size: 20 px;
+        
+    }
+    .navbar li a{
+        color: rgb(6, 35, 13);
+        /* line khatm kliye */
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: purple;
+    }
+    .left img{
+        width: 120px;
+        /* filter:invert(100%) : Image Invert k liye*/
+        
+    }
+    .left div{
+        text-align: center;
+        font-size: 19px;
+        text-align: center;
+    }
+    .btn{
+        font-family: 'Lato', sans-serif;
+        /* margin: 0px 9px; */
+        /* top se koi margin nhi aur horizontally 9px */
+        margin: 8px 9px;
+        background-color: red;
+        color: white;
+        
+        border: 5px solid black;
+        border-radius: 10px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    .container{
+        /* border: 3px solid darkorange; */
+        margin: -7px 792px;
+        padding: 7px 5px;
+        width: 34%;
+        border-radius: 8px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 343px;
+        border-radius: 8px;
+        /* padding: 0px; */
+        font-family: 'Lato', sans-serif;
+        border: 2px solid black;
+        margin: 5px auto;
+        font-size: 20px;
+    }
+    .container h2{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 75%;
+        margin: 23px auto;
+
+
+    }
+
+
+
+
+
+</style>
+<body>
+    <header class="header">
+        <!-- Left Box for Logo -->
+        <div class="left">
+            <img src="img/gym-91849_1280.jpg" alt="">
+            <div>Samyak Fitness</div>
+        </div>
+        <!-- mid box for navigations -->
+        <div class="mid">
+            
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best gym of Lucknow now</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your MailId">
+
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
